@@ -16,6 +16,8 @@
   "eslintConfig": {
     "extends": "react-app"
   },
+  "homepage": "https://kimkablitz.github.io/Tinderee",
+
   "browserslist": [
     ">0.2%",
     "not dead",
