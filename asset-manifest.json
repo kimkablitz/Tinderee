@@ -1,14 +1,13 @@
 {
-  "main.css": "/Tinderee/static/css/main.e6bf5ecb.chunk.css",
-  "main.js": "/Tinderee/static/js/main.710dea22.chunk.js",
-  "main.js.map": "/Tinderee/static/js/main.710dea22.chunk.js.map",
-  "static/js/1.fa92c112.chunk.js": "/Tinderee/static/js/1.fa92c112.chunk.js",
-  "static/js/1.fa92c112.chunk.js.map": "/Tinderee/static/js/1.fa92c112.chunk.js.map",
+  "main.css": "/Tinderee/static/css/main.5f65582b.chunk.css",
+  "main.js": "/Tinderee/static/js/main.9dd90220.chunk.js",
+  "main.js.map": "/Tinderee/static/js/main.9dd90220.chunk.js.map",
+  "static/js/1.01fbba34.chunk.js": "/Tinderee/static/js/1.01fbba34.chunk.js",
+  "static/js/1.01fbba34.chunk.js.map": "/Tinderee/static/js/1.01fbba34.chunk.js.map",
   "runtime~main.js": "/Tinderee/static/js/runtime~main.e799fee0.js",
   "runtime~main.js.map": "/Tinderee/static/js/runtime~main.e799fee0.js.map",
-  "static/media/logo.svg": "/Tinderee/static/media/logo.5d5d9eef.svg",
-  "static/css/main.e6bf5ecb.chunk.css.map": "/Tinderee/static/css/main.e6bf5ecb.chunk.css.map",
+  "static/css/main.5f65582b.chunk.css.map": "/Tinderee/static/css/main.5f65582b.chunk.css.map",
   "index.html": "/Tinderee/index.html",
-  "precache-manifest.ee68effa8ee94177dff1e157b28c03d4.js": "/Tinderee/precache-manifest.ee68effa8ee94177dff1e157b28c03d4.js",
+  "precache-manifest.eabc9df203e7da7816da34aa40206e4a.js": "/Tinderee/precache-manifest.eabc9df203e7da7816da34aa40206e4a.js",
   "service-worker.js": "/Tinderee/service-worker.js"
 }
