@@ -1,0 +1,11 @@
+.navbar{
+    height:100px;
+}
+.brand{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 40px;
+    margin-left: 20px;
+}
+.ins{
+    font-size: 30px;
+}

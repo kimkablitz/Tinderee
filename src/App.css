@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -30,3 +30,11 @@
     transform: rotate(360deg);
   }
 }
+ */
+
+ .list-of-cards{
+   display: flex;
+   align-items: center;
+   flex-direction: row ;
+ }
+ 
