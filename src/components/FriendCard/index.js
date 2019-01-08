@@ -18,10 +18,12 @@ class FriendCard extends React.Component {
 
     return (
       <button >
+        <div className="container" >
         <div className="card" >
           <div className="img-container" onClick = {() => this.props.handleClick (this.props.cardId)}>
             <img alt={this.props.friend.name} src={this.props.friend.image} />
           </div>
+        </div>
         </div>
       </button>
 
