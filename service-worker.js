@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/Tinderee/precache-manifest.ee68effa8ee94177dff1e157b28c03d4.js"
+  "/Tinderee/precache-manifest.b13a6e6b2693be26d52bf595c1e43e81.js"
 );
 
 workbox.clientsClaim();
