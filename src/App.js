@@ -12,31 +12,50 @@ class App extends Component {
     super()
     this.state = {
       friends: friendsData,
-      score: 0
+      score: 0,
+      game: []
+      
     }
     this.handleClick = this.handleClick.bind(this)
+    this.shuffleCards = this.shuffleCards.bind(this)
   }
-  handleClick() {
-    
-    console.log("I was clicked")
+  
+  handleClick(cardId) {
+    console.log(cardId)
+    //id  of the image was clicked
     this.setState(prevState => {
       return{
+        
         score: prevState.score +1 
       } 
     })
-  
+    this.shuffleCards(this.state.friends)
   }
+
+  shuffleCards(myArray){
+    let arrLength = myArray.length - 1;
+    for (let i = 0; i <= arrLength; i++){
+      const j = Math.floor(Math.random() * (arrLength));
+      let temp = myArray[i];
+      myArray[i] = myArray[j]
+      myArray[j] = temp
+    }
+      this.setState({friends:myArray})
+  }
+  //
 
 
   render() {
+
     return (
       <Wrapper>
         <Navbar score = {this.state.score}/>
         <Jumbotron />
-        <main onClick={this.handleClick}>
-          {this.state.friends.map(friend => <FriendCard friend={friend} key={friend.id} />
-          )}
-        </main>
+        {this.state.friends.map(friend => <FriendCard friend={friend} key={friend.id} cardId = {friend.id} handleClick={this.handleClick}/>)
+      }
+        {/* <main onClick={this.handleClick}>
+          {myImages}
+        </main> */}
         <Footer />
       </Wrapper>
     );

@@ -13,7 +13,7 @@ class Navbar extends React.Component {
   //   }
   // }
   render() {
-    console.log(this.props.score)
+    // console.log(this.props.score)
     // let msg
     // if (this.state.isInProgress){
     //   msg = "CLICK HERE TO START"
