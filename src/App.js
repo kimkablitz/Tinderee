@@ -13,6 +13,8 @@ class App extends Component {
     this.state = {
       friends: friendsData,
       score: 0,
+      topScore: 0,
+      msg:  "",
       game: []
 
     }
@@ -23,18 +25,29 @@ class App extends Component {
   handleClick(cardId) {
     // console.log(cardId)
     const currentList = this.state.game
-    currentList.push(cardId)
-    console.log(currentList)
-   if(currentList.indexOf(cardId) === -1){
-     console.log("uhoh")
-   }
+      if (!currentList.includes(cardId)){
+           currentList.push(cardId)
+            console.log(currentList)
+            this.setState(prevState => {
 
-    this.setState(prevState => {
-
-      return {
-        score: prevState.score + 1
+              return {
+                score: prevState.score + 1,
+                msg:  "GAME IS IN PROGRESS"
+              }
+            })
       }
-    })
+      else {
+        this.setState(prevState => {
+
+          return {
+            topScore: prevState.score,
+            score: this.state.score - this.state.score,
+            msg:"YOU HAVE GUESSED INCORRECTLY"
+          }
+        })
+        // console.log("uhoh same")
+      }
+
     this.shuffleCards(this.state.friends)
   }
 
@@ -53,7 +66,7 @@ class App extends Component {
 
     return (
       <Wrapper>
-        <Navbar score={this.state.score} />
+        <Navbar score={this.state.score} topScore={this.state.topScore} msg={this.state.msg}/>
         <Jumbotron />
         {this.state.friends.map(friend => <FriendCard friend={friend} key={friend.id} cardId={friend.id} handleClick={this.handleClick} />)
         }
